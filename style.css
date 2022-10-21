@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    text-transform: capitalize;
+}
+body {
+    background-color: #eee;
+    margin: 60px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.container {
+    background-color: white;
+    width: 350px;
+    height: 300px;
+    margin-top: 60px;
+    border-radius: 3%;
+    position: relative;
+}
+.container::before {
+    content: url(person-blue-shirt.png);
+    position: absolute;
+    left: 115px;
+    top: -110px;
+}
+.container::after {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    content: "A+";
+    background-color: #3b74ba;
+    right: 20px;
+    bottom: -12.5px;
+    color: white;
+    line-height: 25px;
+    text-align: center;
+    font-weight: bold;
+    font-family: monospace;
+    border-radius: 15%;
+  }
+
+h2{
+    color: #3b74ba;
+    text-align: center;
+    margin-top: 50px;
+}
+h3{
+    color: rgb(173, 175, 180);
+    text-align: center;
+    margin: 1px auto;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    width: calc(350px - 5%);
+    position: relative;
+    border-bottom: 5px solid;
+    border-bottom-color: #ededed;
+    
+}
+
+.lin1,
+.lin2,
+.lin3{
+    background-color: #ededed;
+    display: flex;
+    padding: 10px;
+    width: calc(350px - 20px);
+    margin: 10px auto;
+    justify-content: space-between;
+}
